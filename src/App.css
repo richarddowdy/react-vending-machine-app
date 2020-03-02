@@ -2,37 +2,40 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.VendingMachine {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("https://www.rd.com/wp-content/uploads/2014/04/05-how-not-to-die-vending-machine-sl.jpg");
+  background-size: cover;
+  margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.VendingMachine a {
+  display: block;
+  color: dodgerblue;
+  font-size: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.Navbar {
+  position: absolute;
+
+}
+
+.Navbar a {
+  display: block;
+  height: 25px;
+  width: 100px;
+  margin: 15px;
+  border: 3px dodgerblue solid;
+  border-radius: 5px;
+  text-decoration: none;
   color: white;
+  background-color: black;
+  font-size: 20px;
+  font-weight: bold; 
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Navbar a.active {
+  background-color: dodgerblue;
+  border: black;
 }

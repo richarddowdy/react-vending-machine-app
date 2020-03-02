@@ -1,17 +1,16 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-// import Soda from './Soda';
-// import Cookies from './Cookies';
-// import Crackers from './Crackers';
 
-function VendingMachine(){
+function VendingMachine() {
+
+
 
   return (
-    <div>
+    <div className="VendingMachine">
       <Link to='/soda'>
         Soda
       </Link>
-      <Link to='/cookies'>
+      <Link to='/cookies' >
         Cookies
       </Link>
       <Link to='/crackers'>
@@ -19,8 +18,6 @@ function VendingMachine(){
       </Link>
     </div>
   )
-
 };
-
 
 export default VendingMachine;

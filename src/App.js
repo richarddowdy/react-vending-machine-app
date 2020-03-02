@@ -5,15 +5,13 @@ import VendingMachine from "./VendingMachine";
 import Soda from './Soda';
 import Cookies from './Cookies';
 import Crackers from './Crackers';
-
+import Navbar from './Navbar';
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Route exact path="/">
-          <VendingMachine />
-        </Route>
+        <Navbar />
         <Route exact path='/soda'>
           <Soda />
         </Route>
@@ -22,6 +20,9 @@ function App() {
         </Route>
         <Route exact path='/crackers'>
           <Crackers />
+        </Route>
+        <Route exact path="/">
+          <VendingMachine />
         </Route>
       </BrowserRouter>
     </div>
